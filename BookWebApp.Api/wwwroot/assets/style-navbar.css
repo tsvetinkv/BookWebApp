@@ -1,0 +1,40 @@
+﻿.user-profile {
+    position: relative;
+}
+
+#profile-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#profile-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+}
+
+.dropdown-content a:hover {
+    background-color: #3498db;
+    color: #fff;
+}

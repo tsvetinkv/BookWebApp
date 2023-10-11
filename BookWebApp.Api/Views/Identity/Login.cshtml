@@ -1,0 +1,50 @@
+﻿@model BookWebApp.Services.Models.Users.UserLoginModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link href="~/assets/styles/style-login.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+</head>
+<body>
+    <main class="login-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Вход</div>
+                        <div class="card-body">
+                            <form asp-controller="Identity" asp-action="Login">
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label text-md-right">Потребител</label>
+                                    <div class="col-md-6">
+                                        <input asp-for="Username" type="text" class="form-control" required>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">Парола</label>
+                                    <div class="col-md-6">
+                                        <input asp-for="Password" type="password" class="form-control" required>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Вход
+                                    </button>
+                                    <a href="@this.Url.Action("SignUp", "Identity")" class="btn btn-link">
+                                        Регистрация
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

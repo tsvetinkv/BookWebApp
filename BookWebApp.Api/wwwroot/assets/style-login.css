@@ -1,0 +1,18 @@
+﻿body {
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+}
+
+.login-form {
+    padding-top: 50px;
+}
+
+.login-form .row {
+    margin-left: 0;
+    margin-right: 0;
+}
