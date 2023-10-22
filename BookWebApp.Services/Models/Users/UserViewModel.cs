@@ -1,6 +1,7 @@
 ﻿using BookWebApp.Repositories.Models.Users;
 using BookWebApp.Utilities.Mapper;
 using System;
+using System.Collections.Generic;
 
 namespace BookWebApp.Services.Models.Users
 {
@@ -23,5 +24,6 @@ namespace BookWebApp.Services.Models.Users
         public string PhoneNumber { get; set; }
 
         public DateTime? Birthday { get; set; }
+
     }
 }

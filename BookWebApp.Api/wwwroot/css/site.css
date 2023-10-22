@@ -16,3 +16,22 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+table {
+    border-collapse: collapse;
+    width: 30%;
+}
+
+    table td, table thead {
+        border: 1px solid #302D30;
+        padding: 8px;
+        text-align: center;
+    }
+
+
+    table thead {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #302D30;
+        color: white;
+    }

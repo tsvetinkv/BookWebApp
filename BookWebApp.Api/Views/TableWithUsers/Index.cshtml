@@ -1,0 +1,29 @@
+﻿@model BookWebApp.Api.Models.TableWithUsers
+@{
+    ViewData["Title"] = "Tbale with users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <link rel="stylesheet" src="./wwwroot/css/site.css" />
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Username</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

@@ -60,7 +60,7 @@ namespace BookWebApp.Api.Controllers
                 return this.Redirect(returnUrl);
             }
 
-            return this.RedirectToAction("Index", "Home");
+            return this.RedirectToAction("Index", "TableWithUsers");
         }
 
         public async Task<IActionResult> Logout()
